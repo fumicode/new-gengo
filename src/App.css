@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
 }
 
 .App-logo {
@@ -30,4 +29,64 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.c-grid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-grid .e-cell{
+    width: calc(50% - 1em);
+
+}
+
+.p-container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.p-filter{
+
+
+
+}
+
+.p-filter .e-title{
+    background: #eee;
+    padding:1em;
+}
+
+.p-filter .e-output-count{
+    display: inline-block;
+    padding:.5em;
+    background: #ffa;
+}
+
+.p-filter .e-output{
+    max-height:100px;
+    overflow: scroll;
+    margin-bottom: 1em;
+    box-shadow: 0 .5em .5em rgba(0, 0, 0, 0.5);
+
+}
+
+.p-filter .e-output .e-item{
+    display: inline-block;
+    margin:.2em;
+    padding:.2em;
+    white-space: nowrap;
+    background: #afe;
+
+    line-height: 1;
+
+    border-radius:3px;
+}
+
+.p-filter .e-output.m-filtered{
+    background: #faa;
+}
+
+.p-filter .e-output.m-filtered .e-item{
+    background: #eee;
 }
